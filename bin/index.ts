@@ -54,7 +54,7 @@ async function pass():Promise<string> {
         {
             type: "string",
             name :"pass",
-            messange:"\n please enter your pin number"
+            messange:"please enter your pin number"
         }
     ]);
     return usr.pass;   
@@ -99,7 +99,8 @@ for (let i=0;i<user.length;i++)
         console.log("wellcome "+ user[i].name);
        pin=await pass();
       if(pin == user[i].pin){
-        do{tra= await tran();
+        do{
+            tra= await tran();
             if (tra == "Blance"){
                 console.log("Blance in your account is "+user[i].blance )
             }

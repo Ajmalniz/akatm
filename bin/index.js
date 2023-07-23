@@ -45,7 +45,7 @@ async function pass() {
         {
             type: "string",
             name: "pass",
-            messange: "\n please enter your pin number"
+            messange: "please enter your pin number"
         }
     ]);
     return usr.pass;
